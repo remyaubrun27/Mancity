@@ -1,0 +1,98 @@
+/* General CSS */
+/**********************************************************************************************
+	I. First, select your entire 'body' element and declare:
+		1) a solid border of any width and color
+		2) a font family of your choice, with 2 fall-backs
+		3) a width of your choice between 800 and 960 px
+		4) no padding and a background color of your choice (use http://bit.ly/bY6lSb if you
+		   want a gradient (alternatively, try to add a background image - use w3schools for
+		   help!)
+		5) margin such that it would be 10 pixels away from the top and bottom of the page,
+		   and centered from the right and left bounds of the page
+**********************************************************************************************/
+/* Type your code below: */
+body {
+	border: 5px #000000;
+	font-family: Garamond, Arial, Helvetica;
+	width: 960px;
+	
+
+/**********************************************************************************************
+	II. Next, declare that all your 'header', 'footer', and any 'nav's and 'section's on your 
+	    pages should be displayed as blocks. (Remember, you can group multiple selectors with 
+		a comma, e.g. "selector1, selector2, selector3 { ... }" would style all three selectors
+		at once!)
+**********************************************************************************************/
+/* Type your code below: */
+
+/**********************************************************************************************
+	III. Now let's style your 'header' in more detail - select it and declare:
+		1) automatically determined width
+		2) a height between 100 and 140 pixels
+		3) that any text in the header should be centered
+		4) 10px of padding on all sides, and a background color of your choice (use 
+		   http://bit.ly/bY6lSb if you want a gradient;
+		5) no margin
+**********************************************************************************************/
+/* Type your code below: */
+
+/**********************************************************************************************
+	IV. Next, let's style your navigation bars (the main and the one in the footer). 
+	    What do they both have in common? ------------------> That's right! They both contain
+	    unordered lists, with list items that should all be displayed on the same line with no
+	    bullets. We'll need multiple selections to do this:
+	    1) Select all unordered lists that are children of navigation elements, hide 
+	       their bullets, and remove any margin and padding they may have.
+	    2) Next, select all list items that are children of such unordered lists, and make them
+	       display inline.
+**********************************************************************************************/
+/* Type your code below: */
+
+/**********************************************************************************************
+	V. Now it's your footer's turn - select it, and follow the same steps as you did for
+	   your 'header', adding any tweaks you wish. Give it a small solid top-border of the same
+	   color as the one around your body element (use w3schools for help).
+**********************************************************************************************/
+/* Type your code below: */
+
+/**********************************************************************************************
+	VI. While we're working with the footer, let's also style the 'nav' inside of it. Select it,
+		and declare:
+		1) a width of about 80% of the footer
+		2) a height AND line height of 30px
+		3) a margin of 10 pixels at the top and bottom, and auto for left and 
+		   right
+		4) no padding
+		5) Afterward, select the anchors inside of the list items inside of the footer's nav,
+		   and give them a little bit of left and right padding, and a font size of 16 px
+**********************************************************************************************/
+/* Type your code below: */
+
+/**********************************************************************************************
+	VII.  Next, let's style your main navigation (use it's element type and id like so: 
+		  "element#id {...}"): 
+		  1) Select the nav element with id main-nav,
+		     and declare a background color of your choice, and a height of 40 pixels. Make the 
+		     nav stretch the entire width of your body element - determined automatically. Give
+			 it a line height of 30px, and top and bottom padding of 5px;
+		  2) Then, select the anchors that are children of the list items inside of the
+		     unordered list, itself a child of the main-nav. Give the text a color of your
+			 choice (something that stands out on the nav's background you selected in 1)),
+			 a font size of 26px, and remove any padding from the top and bottom, and declare
+			 30px padding to the left and the right.
+**********************************************************************************************/
+/* Type your code below: */
+
+/**********************************************************************************************
+	VIII. Now, let's target your main-section: give it a minimum height of 400px, width equal 
+		  to the full width of the body, and a background color of your choice. 
+**********************************************************************************************/
+/* Type your code below: */
+
+/**********************************************************************************************
+	IX. Finally, let's make ALL of your anchors become underlined when you hover over them:
+	   1) select every anchor on your page and remove it's text decoration
+	   2) use the appropriate pseudo selector to select the anchor's hover state, and give 
+	      it an underline text decoration
+**********************************************************************************************/
+/* Type your code below: */

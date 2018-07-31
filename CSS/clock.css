@@ -1,0 +1,25 @@
+body{
+	background-color:black;
+	height: 600px;
+}
+div#clock{
+	position: relative;
+	font-size: 6em;
+	color: #336600;
+	text-align: center;
+	/*font-family:badAss;*/	
+	top: 300px; 
+}
+/*
+@font-face{
+	font-family:badAss;
+	src: url("res/space age.ttf");
+}
+@font-face{
+	font-family:badAss2;
+	src: url("res/prstart.ttf");
+}
+@font-face{
+	font-family:badAss3;
+	src: url("res/TickingTimebombBB.ttf");
+}*/

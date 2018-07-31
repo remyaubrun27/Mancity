@@ -1,0 +1,163 @@
+body{
+	width: 960px;
+	height: 800px;
+	font-family: "Helvetica", Arial, serif;
+	margin: 10px auto;
+	background-image: url("http://www.wallpapersfootballclub.com/wp-content/uploads/2014/07/Manchester-City-Team-Squad-2013-2014-Wallpaper-HD.jpg");
+	background-size: 100%;
+	color:white;
+	
+}
+section{
+	opacity: 1;	
+	background-color:  background-color: #2F2727;
+  background-image: url(images/radial_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2F2727));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #1a82f7, #2F2727);
+
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, #1a82f7, #2F2727);
+
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, #1a82f7, #2F2727);
+	position:relative;
+	height:594px;
+	border:5px solid black;
+	z-index:-2;
+	}
+header, footer, nav, section, div{
+	display: block;
+}
+header, footer, nav, section {
+	border-radius:25px;
+}
+header{
+	text-align: center;
+	height:50px
+	border:5px solid black;
+	/*background-color: #3399FF;*/
+	padding-top:0px;
+	}
+header h1{
+	font-size: 50px;
+	font-family: sports;
+	}
+@font-face{
+	font-family: sports;
+	src: url("../res/sf-sports-night.regular.ttf");
+}
+nav ul{
+	list-style-type: none;
+	margin-bottom:0;
+	margin-top:0px;	
+}
+footer nav ul{
+	padding-top:10px;
+}
+nav ul li{
+	display:inline;
+	font-weight: bold;
+	
+}
+nav ul li a{
+	text-decoration: none;
+	padding: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: navy;
+	
+}
+nav ul li a:hover{
+	text-decoration:underline;
+	background-color: white;
+	font-weight:bold;
+}
+nav#main-nav {
+	height:35px;
+	width:auto;
+	line-height:30px;
+	padding-bottom: 5px;
+	text-align: center;
+	font-weight: bold;
+	background-color:background: #2ab0ed; /* Old browsers */
+background: -moz-linear-gradient(top, #2ab0ed 9%, #9fd8ef 88%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(9%,#2ab0ed), color-stop(88%,#9fd8ef)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #2ab0ed 9%,#9fd8ef 88%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #2ab0ed 9%,#9fd8ef 88%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #2ab0ed 9%,#9fd8ef 88%); /* IE10+ */
+background: linear-gradient(to bottom, #2ab0ed 9%,#9fd8ef 88%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ab0ed', endColorstr='#9fd8ef',GradientType=0 ); /* IE6-9 */
+}
+nav#main-nav ul{
+	padding-top:-10;
+}	
+footer{
+	opacity:1;
+	width: 960px;
+	height: 50px;
+	line-height: 15px;
+	margin-left:auto;
+	margin-right: auto;
+	text-align:center;
+	background-color:background #d0e4f7; /* Old browsers */
+background: -moz-linear-gradient(top, #d0e4f7 0%, #73b1e7 48%, #539fe1 100%, #87bcea 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d0e4f7), color-stop(48%,#73b1e7), color-stop(100%,#539fe1), color-stop(100%,#87bcea)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #d0e4f7 0%,#73b1e7 48%,#539fe1 100%,#87bcea 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #d0e4f7 0%,#73b1e7 48%,#539fe1 100%,#87bcea 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #d0e4f7 0%,#73b1e7 48%,#539fe1 100%,#87bcea 100%); /* IE10+ */
+background: linear-gradient(to bottom, #d0e4f7 0%,#73b1e7 48%,#539fe1 100%,#87bcea 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
+	position:absolute;
+	top: 700px;
+	
+}
+/*tables*/
+
+table{
+	position: absolute;
+	left: 10px;
+	width: 450px;
+	font-size: 20px;
+	/*border:1px solid black;*/
+	}
+table tr td{
+	border: 1px solid #DAA520;
+	background-color: black;
+	color:white;
+	}
+table#aguero_stats{
+	top:65px;
+}
+table#yaya_stats{
+	top:65px;
+}
+table#nasri_stats{
+	top:65px;	
+}
+.plyTable{
+	left:0;
+	padding-top:15px;
+	padding-bottom:105px;
+	position:relative;
+	border:2px solid gold;
+}
+
+div#clock{
+position: fixed;
+left: 23px;
+top: 270px;
+	width: 150px;
+	font-size: 24px;
+	color: black;
+	text-align: center;
+	text-decoration: bold;
+	background-color: #66CCFF;
+	border-radius: 10px;
+}

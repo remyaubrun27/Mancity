@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Manchester_City.svg/860px-Manchester_City.svg.png"/>
+      <title>Favorite Manchester City Player.</title>
+      <link type="text/css" rel="stylesheet" href="../CSS/favply.css"/>
+      <script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+      <script type="text/javascript" src="../js/favply.js"></script>
+      <script type="text/javascript" src="../js/clock.js"></script>
+      <!--<script type="text/javascript" src="../js/favoritePlayerPoll.js"></script>-->
+   </head>
+   <body>
+      <header>
+         <h1>Who's your favorite player?</h1>
+         <nav id="main-nav">
+            <ul>
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="stats.html">Statistics</a></li>
+               <li><a href="roster.html">Roster</a></li>
+               <li><a href="titles.html">Titles</a></li>
+               <div class="dropdown" id="extras">
+               <button class="dropbtn" id="extras">Extras and Social Media</button>
+               <div class="dropdown-content" id="extras">
+                  <a href="gallery.html">Gallery</a>
+                  <a href="fav.html">Favorite Player?</a>
+                  <a href="socialmedia.html">Social Media</a>
+                  <a href="contact.html">Contact Mancity</a>
+               </div>
+            </ul>
+         </nav>
+      </header>
+      <section>
+         <div id="clock">
+            11:15 AM
+         </div>
+         <div id="aguero">
+            <img src="http://i.telegraph.co.uk/multimedia/archive/02790/sergio-aguero_2790731b.jpg" style="padding-top:10px; height: 200px; width:300px;" id="aguero"/>
+            <h2 id="aguero" >Sergio Aguero</h2>
+            <p>You Chose<br></br> Sergio Aguero!!!</p>
+            <div class="poll" id="agueroPoll"></div>
+            <input type="checkbox" id="abox" class="playerCheckbox"/>
+            <table id="aguero_box">
+               <tr>
+                  <td>Age</td>
+                  <td>27</td>
+               </tr>
+               <tr>
+                  <td>DOB</td>
+                  <td>June 2, 1988</td>
+               </tr>
+               <tr>
+                  <td>Birth Place</td>
+                  <td>Quilmes, Argentina</td>
+               </tr>
+               <tr>
+                  <td>Goals Scored</td>
+                  <td>26</td>
+               </tr>
+            </table>
+         </div>
+         <div id="nasri">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/e/e1/Samir_Nasri_Euro_2012_v2.jpg" style="width:200px; height:250px;"/>
+            <h2 id="nasri">Samir Nasri</h2>
+            <p style="color: black;">You Chose<br></br> Samir Nasri!!!</p>
+            <input type="checkbox" id="nbox" class="playerCheckbox"/>
+            <table id="nasri">
+               <tr>
+                  <td>Age</td>
+                  <td>28</td>
+               </tr>
+               <tr>
+                  <td>DOB</td>
+                  <td>Jun 26, 1987</td>
+               </tr>
+               <tr>
+                  <td>Birth Place</td>
+                  <td>Marseille, France</td>
+               </tr>
+               <tr>
+                  <td>Goals Scored</td>
+                  <td>2</td>
+               </tr>
+            </table>
+            <div class="poll" id="nasriPoll"></div>
+         </div>
+         <div id="vince">
+            <img src="http://img.thesun.co.uk/multimedia/archive/01507/kompany_1507398a.jpg" style="width: 250px; height: 300px;" />
+            <h2 id="vince">Vincent Kompany</h2>
+            <p>You Chose<br></br> Vincent Kompany!!!</p>
+            <input type="checkbox" id="vbox" class="playerCheckbox"/>
+            <table id="vince">
+               <tr>
+                  <td>Age</td>
+                  <td>29</td>
+               </tr>
+               <tr>
+                  <td>DOB</td>
+                  <td>April 10, 1986</td>
+               </tr>
+               <tr>
+                  <td>Birth Place</td>
+                  <td>Uccle, Brussels, Belgium</td>
+               </tr>
+               <tr>
+                  <td>Goals Scored</td>
+                  <td>0</td>
+               </tr>
+            </table>
+            <div class="poll" id="vincePoll"></div>
+         </div>
+         <div id="otherPly">
+            <ul id="newPlyList">
+               <li>
+                  <button id="addPlyButton">Is your favorite player not listed? <br>Click here to add your idol!</button>
+               </li>
+               <li>
+                  <span id="newPly"></span>
+               </li>
+            </ul>
+         </div>
+      </section>
+   </body>
+   <footer>
+      <nav>
+         <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="stats.html">Statistics</a></li>
+            <li><a href="roster.html">Roster</a></li>
+            <li><a href="titles.html">Titles</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="fav.html">Favorite Player?</a></li>
+         </ul>
+      </nav>
+   </footer>
+</html>

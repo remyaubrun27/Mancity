@@ -1,0 +1,309 @@
+body{
+	width: 960px;
+	/*border: 2px solid black;*/
+	font-family: "Helvetica", Arial;
+	margin: 5px auto;
+	background-size: 100%;
+	color: navy;
+	background-color: /* IE10 Consumer Preview */
+background-image: -ms-linear-gradient(left, #292929 0%, #0918ED 50%, #292929 100%);
+
+/* Mozilla Firefox */
+background-image: -moz-linear-gradient(left, #292929 0%, #0918ED 50%, #292929 100%);
+
+/* Opera */
+background-image: -o-linear-gradient(left, #292929 0%, #0918ED 50%, #292929 100%);
+
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #292929), color-stop(0.5, #0918ED), color-stop(1, #292929));
+
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(left, #292929 0%, #0918ED 50%, #292929 100%);
+
+/* W3C Markup, IE10 Release Preview */
+background-image: linear-gradient(to right, #292929 0%, #0918ED 50%, #292929 100%);
+
+}
+
+header, footer, nav, section{
+	display: block;
+	list-style-type: none;
+	}
+header{
+	/*margin:0 auto;*/
+	width: 100%;
+	height: 128px;
+	text-align: center;
+	background-image: url("http://img.auctiva.com/imgdata/1/4/0/2/6/3/7/webimg/518043720_o.jpg");
+	border-radius:25px;
+
+	}
+header h1{
+	color: white;
+	padding-top:20px;
+	}
+
+
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #d197fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #d197fe;
+	box-shadow:inset 0px 1px 0px 0px #d197fe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a53df6), color-stop(1, #7c16cb) );
+	background:-moz-linear-gradient( center top, #a53df6 5%, #7c16cb 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a53df6', endColorstr='#7c16cb');
+	background-color:#a53df6;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	border:2px solid #9c33ed;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:6px 25px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #7d15cd;
+}.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #7c16cb), color-stop(1, #a53df6) );
+	background:-moz-linear-gradient( center top, #7c16cb 5%, #a53df6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7c16cb', endColorstr='#a53df6');
+	background-color:#7c16cb;
+}.button:active {
+	position:relative;
+	top:1px;
+}
+/*Navigation bars*/
+
+nav#main-nav{
+position:relative;
+top:10px;
+	height:40px;
+	width:960px;
+	line-height:30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	font-weight: bold;
+	background-color:background: #2ab0ed; /* Old browsers */
+background: -moz-linear-gradient(top, #2ab0ed 9%, #9fd8ef 88%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(9%,#2ab0ed), color-stop(88%,#9fd8ef)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #2ab0ed 9%,#9fd8ef 88%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #2ab0ed 9%,#9fd8ef 88%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #2ab0ed 9%,#9fd8ef 88%); /* IE10+ */
+background: linear-gradient(to bottom, #2ab0ed 9%,#9fd8ef 88%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ab0ed', endColorstr='#9fd8ef',GradientType=0 ); /* IE6-9 */
+border-radius:25px;
+}
+nav#main-nav a:hover{
+	background-color: white;
+	text-decoration: underline;
+
+}
+nav#main-nav ul{
+	margin-top:0px;
+	}
+
+nav#main-nav ul li a{
+	color: black;
+	line-height:40px;
+	font-size: 20px;
+	padding: 0 20px;
+}
+
+
+nav ul{
+	list-style-type: none;
+	}
+nav ul li{
+	float: center;
+	font-weight: bold;
+	display: inline;
+	}
+nav ul li a{
+	text-decoration: none;
+	padding: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: navy;
+}
+
+
+footer{
+	width: auto;
+	height: 120px;
+	text-align: center;
+	background-image: url("http://img.auctiva.com/imgdata/1/4/0/2/6/3/7/webimg/518043720_o.jpg");
+	border-radius:25px;
+
+	}
+footer nav{
+position:relative;
+top:0px;
+	height:40px;
+	width:960px;
+	line-height:30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bold;
+	background-color:background: #2ab0ed; /* Old browsers */
+background: -moz-linear-gradient(top, #2ab0ed 9%, #9fd8ef 88%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(9%,#2ab0ed), color-stop(88%,#9fd8ef)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #2ab0ed 9%,#9fd8ef 88%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #2ab0ed 9%,#9fd8ef 88%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #2ab0ed 9%,#9fd8ef 88%); /* IE10+ */
+background: linear-gradient(to bottom, #2ab0ed 9%,#9fd8ef 88%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ab0ed', endColorstr='#9fd8ef',GradientType=0 ); /* IE6-9 */
+	border-radius:25px;
+
+	}
+	footer nav ul li a:hover{
+	background-color: white;
+	text-decoration: underline;
+
+}
+footer nav ul{
+	text-align: center;
+}
+/*Navigation bars*/
+header h1{
+	font-family:sports;
+	text-decoration: underline;
+	}
+@font-face{
+	font-family: sports;
+	src: url("../res/sf-sports-night.regular.ttf");
+}
+/* Body content*/
+section{
+	width:960px;
+	height:500px;
+	color: black;
+	}
+div#clock{
+position: fixed;
+left: 23px;
+top: 270px;
+	width: 150px;
+	font-size: 24px;
+	color: black;
+	text-align: center;
+	text-decoration: bold;
+	background-color: #66CCFF;
+	border-radius: 10px;
+}
+.mediaWidgets{
+	width: 960px;
+}
+.mediaWidgets td{
+	width: 480px;
+	text-align:center;
+	background-color: #66ccff;
+}
+#twitter{
+	max-width:480px;
+}
+/*the drop down button/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #0066ff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #0066ff;
+}
+#extras{
+	z-index:1;
+}
+	/*Body content*/
+/**********************************************************************************************
+	VII.  Next, let's style your main navigation (use it's element type and id like so:
+		  "element#id {...}"):
+		  1) Select the nav element with id main-nav,
+		     and declare a background color of your choice, and a height of 40 pixels. Make the
+		     nav stretch the entire width of your body element - determined automatically. Give
+			 it a line height of 30px, and top and bottom padding of 5px;
+		  2) Then, select the anchors that are children of the list items inside of the
+		     unordered list, itself a child of the main-nav. Give the text a color of your
+			 choice (something that stands out on the nav's background you selected in 1)),
+			 a font size of 26px, and remove any padding from the top and bottom, and declare
+			 30px padding to the left and the right.
+**********************************************************************************************/
+/* Type your code below: */
+
+/**********************************************************************************************
+	VIII. Now, let's target your main-section: give it a minimum height of 400px, width equal
+		  to the full width of the body, and a background color of your choice.
+**********************************************************************************************/
+/* Type your code below: */
+
+/**********************************************************************************************
+	IX. Finally, let's make ALL of your anchors become underlined when you hover over them:
+	   1) select every anchor on your page and remove it's text decoration
+	   2) use the appropriate pseudo selector to select the anchor's hover state, and give
+	      it an underline text decoration
+**********************************************************************************************/
+/* Type your code below: */
+#pinFB{
+	margin-top: 30px;
+}
+#fb{
+	margin-top: 10px;
+		margin-bottom:0px;
+}
+.button_example{
+	position: relative;
+	bottom:5px;
+border:1px solid #7d99ca; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:18px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; text-align: center; color: #FFFFFF; background-color: #A5B8DA;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#A5B8DA), to(#7089B3));
+ background-image: -webkit-linear-gradient(top, #A5B8DA, #7089B3);
+ background-image: -moz-linear-gradient(top, #A5B8DA, #7089B3);
+ background-image: -ms-linear-gradient(top, #A5B8DA, #7089B3);
+ background-image: -o-linear-gradient(top, #A5B8DA, #7089B3);
+ background-image: linear-gradient(to bottom, #A5B8DA, #7089B3);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#A5B8DA, endColorstr=#7089B3);
+}
+.button_example:hover{
+ border:1px solid #5d7fbc; background-color: #819bcb;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#819bcb), top(#536f9d));
+ background-image: -webkit-linear-gradient(top, #819bcb, #536f9d);
+ background-image: -moz-linear-gradient(top, #819bcb, #536f9d);
+ background-image: -ms-linear-gradient(top, #819bcb, #536f9d);
+ background-image: -o-linear-gradient(top, #819bcb, #536f9d);
+ background-image: linear-gradient(to bottom, #819bcb, #536f9d);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#819bcb, endColorstr=#536f9d);
+}

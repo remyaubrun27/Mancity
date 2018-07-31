@@ -1,0 +1,50 @@
+{
+    "Aguero":{
+        "fullname":"Sergio Kun Aguero",
+        "dob":"June 2nd, 1988",
+        "born":"Buenos Aires, Argentina",
+        "position":"Striker"
+    },
+    "Bravo":{
+        "fullname":"Claudio Bravo",
+        "dob":"April 13, 1983",
+        "born":"Viluco, Chile",
+        "position":"Keeper"
+    },
+    "Walker":{
+        "fullname":"Kyle Walker",
+        "dob":"May 28, 1990",
+        "born":"Sheffield, England",
+        "position":"Right Back"
+    },
+    "Danilo":{
+        "fullname":"Danilo Luiz da Silva",
+        "dob":"July 15, 1991",
+        "born":"Bicas, Brazil",
+        "position":"Full Back"
+    },
+    "Kompany":{
+        "fullname":"Vincent Jean Mpoy Kompany",
+        "dob":"April 10, 1986",
+        "born":"Uccle, Brussels, Belgium",
+        "position":"Centre Back"
+    },
+    "Stones":{
+        "fullname":"John Stones",
+        "dob":"May 28 1994",
+        "born":"Barnsley, England",
+        "position":"Centre Back"
+    },
+    "Sterling":{
+        "fullname":"Raheem Shaquille Sterling",
+        "dob":"December 8, 1994",
+        "born":"Kingston, Jamaica",
+        "position":"Winger/Attacking midfielder"
+    },
+    "Gundogan":{
+        "fullname":"Ilkay Gundogan",
+        "dob":"October 24, 1990",
+        "born":"Gelsenkirchen, Germany",
+        "position":"Midfielder"
+    }
+}

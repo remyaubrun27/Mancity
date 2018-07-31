@@ -1,0 +1,135 @@
+body{
+	width: 960px;
+ 	font-family: "Helvetica", Arial, serif;
+	margin:10px auto;
+	background-image:url("http://www.1000goals.com/wallpapers3/manchester-city-6.jpg");
+	background-size:100%;
+	color: black;
+}
+header, footer, nav, section{
+	display: block;
+	border-radius:25px;
+}
+header{
+	width: auto;
+	height: 125px;
+	text-align: center;
+	padding: 10px 0;
+	position: static;
+	font-weight:bold;
+	background-color: #00ccff;
+}
+header h1{
+	font-size: 50px;
+	font-family: sports;
+	}
+@font-face{
+	font-family: sports;
+	src: url("../res/sf-sports-night.regular.ttf");
+}
+nav#main-nav{
+	height:40px;
+	width:auto;
+	line-height:30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #2ab0ed; /* Old browsers */
+background: -moz-linear-gradient(top, #2ab0ed 9%, #9fd8ef 88%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(9%,#2ab0ed), color-stop(88%,#9fd8ef)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #2ab0ed 9%,#9fd8ef 88%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #2ab0ed 9%,#9fd8ef 88%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #2ab0ed 9%,#9fd8ef 88%); /* IE10+ */
+background: linear-gradient(to bottom, #2ab0ed 9%,#9fd8ef 88%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ab0ed', endColorstr='#9fd8ef',GradientType=0 ); /* IE6-9 */
+}
+footer{
+	width: 960px;
+	height: 50px;
+	line-height: 15px;
+	margin-top:0px;
+	margin-bottom: 0px;
+	margin-left:auto;
+	margin-right: auto;
+	text-align:center;
+	background-color:#d0e4f7; /* Old browsers */
+background: -moz-linear-gradient(top, #d0e4f7 0%, #73b1e7 48%, #539fe1 100%, #87bcea 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d0e4f7), color-stop(48%,#73b1e7), color-stop(100%,#539fe1), color-stop(100%,#87bcea)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #d0e4f7 0%,#73b1e7 48%,#539fe1 100%,#87bcea 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #d0e4f7 0%,#73b1e7 48%,#539fe1 100%,#87bcea 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #d0e4f7 0%,#73b1e7 48%,#539fe1 100%,#87bcea 100%); /* IE10+ */
+background: linear-gradient(to bottom, #d0e4f7 0%,#73b1e7 48%,#539fe1 100%,#87bcea 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
+	position:absolute;
+	top: 500px;
+	left: -5px;
+}
+	div#clock{
+position: fixed;
+left: 23px;
+top: 270px;
+	width: 150px;
+	font-size: 24px;
+	color: black;
+	text-align: center;
+	text-decoration: bold;
+	background-color: #66CCFF;
+	border-radius: 10px;
+}
+nav ul{
+	list-style-type: none;
+	font-weight: bold;
+	margin: 0px;
+	padding: 5px;	
+}
+nav ul li{
+	display: inline;
+}
+nav ul li a{
+	text-decoration: none;
+	padding: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	color: navy;
+}
+nav ul li a:hover{
+	text-decoration:underline;
+	background-color: white;
+	font-weight:bold;
+}
+
+section{
+	height:650px;
+	width:100%;
+	border: 5px solid black;
+	position:relative;
+	}
+
+
+
+h4{
+	position: absolute;
+	right:570px;
+	top:350px;
+	font-weight:bold;
+	font-size: 20px;
+	text-align:center;
+	background-color:white;
+}
+
+	
+img{
+	position:absolute;
+	left: 150px;
+	height:346px;
+	width: 590px;
+	}
+p{
+	position:absolute;
+	top:550px;
+	left:75px;
+	font-weight:bold;
+	color:#FF9900;
+	background-color: black;
+	}

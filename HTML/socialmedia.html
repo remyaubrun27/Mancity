@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Manchester_City.svg/860px-Manchester_City.svg.png"/>
+      <title>Manchester City on Social Media</title>
+      <link type="text/css" rel="stylesheet" href="../CSS/socialmedia.css"/>
+      <script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+      <script type="text/javascript" src="../js/clock.js"></script>
+      <script type="text/javascript" src="../js/socialmedia.js"></script>
+   </head>
+   <body>
+      <header>
+         <h1>Follow Manchester City on Social Media</h1>
+         <nav id="main-nav">
+            <ul>
+               <li><a href="../index.html">Home</a></li>
+               <li><a href="stats.html">Statistics</a></li>
+               <li><a href="roster.html">Roster</a></li>
+               <li><a href="titles.html">Titles</a></li>
+               <div class="dropdown" id="extras">
+               <button class="dropbtn" id="extras">Extras and Social Media</button>
+               <div class="dropdown-content" id="extras">
+                  <a href="gallery.html">Gallery</a>
+                  <a href="fav.html">Favorite Player?</a>
+                  <a href="socialmedia.html">Social Media</a>
+                  <a href="contact.html">Contact Mancity</a>
+               </div>
+            </ul>
+         </nav>
+      </header>
+      <section>
+         <div id="clock"></div>
+         <table class="mediaWidgets">
+            <tr>
+               <!--Twitter-->
+               <td border="3px solid white"></td>
+               <td>
+                  <table>
+                     <tr>
+                        <td>
+                           <p>Why is Manchester City your favorite team?</p>
+                           <textarea rows="4" cols="40" placeholder="" id="text3"></textarea>
+                           <h5 class="emptyText" id="message3">Please fill out this section.</h5>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <button value="Submit" id="submit" onclick="myFunction();">Submit</button>
+                           <div id="pinFB">
+                              
+                              <form id="fb"> <a href="https://www.facebook.com/mcfcofficial" target="_blank"><input type="button" class="button_example"  value="Mancity Facebook" /></a></form>
+                           </div>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </table>
+      </section>
+   </body>
+   <footer>
+      <nav>
+         <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="stats.html">Statistics</a></li>
+            <li><a href="roster.html">Roster</a></li>
+            <li><a href="titles.html">Titles</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="fav.html">Favorite Player?</a></li>
+         </ul>
+      </nav>
+   </footer>
+</html>
