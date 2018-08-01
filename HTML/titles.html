@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Manchester_City.svg/860px-Manchester_City.svg.png"/>
+   <!-- <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Manchester_City.svg/860px-Manchester_City.svg.png"/> -->
    <link type="text/css" rel="stylesheet" href="../CSS/titles.css"/>
    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
    <script type="text/javascript" src="../js/titles.js"></script>
    <script type="text/javascript" src="../js/clock.js"></script>
    <head>
@@ -35,36 +37,22 @@
          <div id="clock">
             11:15 AM
          </div>
-         <img src="http://cdn.images.express.co.uk/img/dynamic/67/590x/secondary/157451.jpg" id="team"/>
-         <h2>Manchester City's achievements in it's century of existence!</h2>
-         <div id="euro_cup"  class="title">
-            <h3>Euro Cup Wins</h3>
-            <img src="http://www.mtrstore.com/464-1561-thickbox/euro-2012-the-henri-delaunay-cup-trophy-replica-43cm.jpg" class="clickable1 trophy"/>
-            <ul>
-               <li>1970</li>
-            </ul>
-         </div>
-         <div id="primer"  class="title">
-            <h3>Primer League Cup Wins</h3>
-            <img src="http://premiersoccerchat.com/wp-content/uploads/2013/01/PremierLeagueTrophy.jpg" class="trophy clickable1">
-            <ul>
-               <li>1936-37</li>
-               <li>1967-68</li>
-               <li>2011-12</li>
-               <li>2013-14</li>
-            </ul>
-         </div>
-         <div  id="fa" class="title" >
-            <h3>FA Cup Wins</h3>
-            <img src="http://www.therecycler.com/wp-content/uploads/2012/06/FA-Cup-Trophy.jpg" class="clickable1 trophy"/>
-            <ul>
-               <li>1904</li>
-               <li>1934</li>
-               <li>1956</li>
-               <li>1969</li>
-               <li>2011</li>
-            </ul>
-         </div>
+         <table>
+             <tr>
+                 <td>
+                    <button class="titleBtn" id="fa">Checkout FA titles:</button>
+                    <ul></ul>
+                 </td>
+                 <td>
+                    <button class="titleBtn" id="pl">Checkout Primer League titles:</button>
+                    <ul></ul>
+                </td>
+                <td>
+                    <button class="titleBtn" id="euro">Checkout Euro titles:</button>
+                    <ul></ul>
+                </td>
+             </tr>
+         </table>
       </section>
       <footer>
          <nav>

@@ -10,7 +10,7 @@ section, header, footer{
 	display:block;
 }
 section{
-	height:550px;
+	height:450px;
 	border: 5px solid black;
 }
 footer{
