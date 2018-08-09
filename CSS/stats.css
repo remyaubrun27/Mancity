@@ -61,9 +61,7 @@ background: -o-linear-gradient(top, #d0e4f7 0%,#73b1e7 48%,#539fe1 100%,#87bcea 
 background: -ms-linear-gradient(top, #d0e4f7 0%,#73b1e7 48%,#539fe1 100%,#87bcea 100%); /* IE10+ */
 background: linear-gradient(to bottom, #d0e4f7 0%,#73b1e7 48%,#539fe1 100%,#87bcea 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
-	position:absolute;
-	top: 500px;
-	left: -5px;
+
 }
 	div#clock{
 position: fixed;
@@ -100,36 +98,30 @@ nav ul li a:hover{
 }
 
 section{
-	height:650px;
+	height:550px;
 	width:100%;
 	border: 5px solid black;
 	position:relative;
+	background-color: #73b1e7;
 	}
 
 
 
-h4{
-	position: absolute;
-	right:570px;
-	top:350px;
+h2{
 	font-weight:bold;
 	font-size: 20px;
 	text-align:center;
-	background-color:white;
+	margin: 0 auto;
+	text-decoration: underline;
 }
+table{
+	margin:50px auto;
+}
+#main td{
+	padding: 20px;
+}
+.statsPic{
+	width:150px;
+	height:200px;
 
-	
-img{
-	position:absolute;
-	left: 150px;
-	height:346px;
-	width: 590px;
-	}
-p{
-	position:absolute;
-	top:550px;
-	left:75px;
-	font-weight:bold;
-	color:#FF9900;
-	background-color: black;
-	}
+}

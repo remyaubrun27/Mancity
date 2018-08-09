@@ -3,11 +3,11 @@
    <head>
       <link type="text/css" rel="stylesheet" href="../CSS/stats.css"/>
       <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>	
-      <script type="text/javascript" src="../js/stats.js"></script>
       <script type="text/javascript" src="../js/clock.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
-        <script src="../js/db.js"></script>
+      <script type="text/javascript" src="../js/stats.js"></script>
+
       <title>Statistic</title>
    </head>
    <body>
@@ -29,35 +29,42 @@
          <div id="clock">
             11:15 AM
          </div>
-         <table>
-         <tr>
+        <table id="main"><!--Main table-->
+         <tr><!--numerical stats row-->
             <td>
                <div>
-                  <table id="away">
-                      WHERE DATA GOES!!!
-                  </table>
+                 <h2>Offensive Statistics</h2>
+                  <ul id="attack"></ul>
                </div>
             </td>
-            <td></td>
-            <!-- Middle/break cell-->
             <td>
                <div>
-                  <table id="home">
-                  </table>
+                 <h2>Defensive Statistics</h2>
+                <ul id="defense"></ul>
                </div>
+            </td>
+            <td>
+              <div>
+                <h2>Dicispline Statistics</h2>
+                <ul id="discipline"></ul>
+              </div>
             </td>
          </tr>
-         <!-- Botton row with the club statitics-->
-         <tr>
-            <td></td>
-            <td>
-               <div>
-                  <table id="sum">
-                  </table>
-               </div>
-            </td>
-            <td></td>
+         <tr><!--Photo stats row-->
+           <td id="notableGoals"><!--Goals stats-->
+            <img src="new_images/aguero.png" alt="" class="statsPic"><!--Aguero pick for goals-->
+            <h3>2017/18 Most Goals:</h3>
+          </td>
+           <td id="notableAssists"><!--Assists stats-->
+            <img src="new_images/kevin.png" alt="" class="statsPic"><!--Kevin for assists-->
+            <h3>2017/18 Most Assists:</h3> 
+          </td>
+           <td id="notablePasses"><!--Passes stats-->
+            <img src="new_images/nicolas.png" alt="" class="statsPic"><!--nicolas for passes-->
+            <h3>2017/18 Most Passes:</h3> 
+          </td>
          </tr>
+        </table>
       </section>
       <footer>
       <nav>

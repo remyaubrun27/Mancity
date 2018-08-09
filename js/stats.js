@@ -1,92 +1,93 @@
-var toggle = 0;
-$(document).ready(function() {
-    $('.num').hide();
+var config = {
+  apiKey: "<API KEY>",
+  authDomain: "<AUTH DOMAIN>",
+  databaseURL: "<DATABASE URL>",
+  projectId: "<PROJECT ID>",
+  storageBucket: "<STORAGE BUCKET>",
+  messagingSenderId: "<MESSAGING SENDER ID>"
+};
+  var app = firebase.initializeApp(config);
+  var db = firebase.firestore(app);
+  var goals,gpm,ontarget,shots;//attacking stats
+  var cs,bs,conceded,saves;//defenseive stats
+  var rc,yc,off,fouls;//discipline stats
+  var notableGoals,notableAssists, notablePasses;
+  var array=[];
 
-    $('.clickable').hover(function() {
-            $(this).stop(true, true);
-            $(this).next().slideDown('fast');
-        },
-        function() {
-            $(this).stop(false, true);
-            $(this).next().slideUp('slow');
-        }
+   //settings
+    const settings = { /* your settings... */
+	    timestampsInSnapshots: true
+    };
+    db.settings(settings);
 
-    );
-});
-$(document).ready(function() {
-    $('.num').hide();
+  db.collection("stats").doc("attacking").get()
+  .then(function(doc){
+    goals ="Goals: "+doc.data().goals;
+    gpm ="Goals Per Minute: "+doc.data().gpm;
+    ontarget = "Shots On Target: "+doc.data().ontarget;
+    shots = "Shots: "+doc.data().shots;
 
-    $('.clickable').hover(function() {
-            $(this).stop(true, true);
-            $(this).next().slideDown('fast');
-        },
-        function() {
-            $(this).stop(false, true);
-            $(this).next().slideUp('slow');
-        }
+    array.push(goals,gpm,ontarget,shots);
+    
 
-    );
-});
+    populateList(array,"attack");
+ });
 
-$(document).ready(function() {
-  /*  var date = new Date();
-    var currTime = date.toLocaleTimeString();
-    setInterval(function() {
-        var date = new Date();
-        var currTime = date.toLocaleTimeString();
-    }, currTime, 1000);*/
-function getCurrentTime(){
-	var d = new Date();
-	d = d.toLocaleTimeString();
-}
+  db.collection("stats").doc("defense").get()
+  .then(function(doc){
+    cs ="Clean Sheets: "+doc.data().cleansheets;
+    bs ="Blocked Shots: "+doc.data().blockedshots;
+    conceded = "Goals Conceded: "+doc.data().conceded;
+    saves = "Saves: "+doc.data().saves;
 
-    function getTimeRemaining(endtime) {
-        var t = Date.parse(endtime) - Date.parse(new Date());
-        var seconds = Math.floor((t / 1000) % 60);
-        var minutes = Math.floor((t / 1000 / 60) % 60);
-        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-        var days = Math.floor(t / (1000 * 60 * 60 * 24));
-        return {
-            'total': t,
-            'days': days,
-            'hours': hours,
-            'minutes': minutes,
-            'seconds': seconds
-        };
+    array.push(cs,bs,conceded,saves);
+
+    populateList(array,"defense");
+  });
+
+  db.collection("stats").doc("disciplines").get()
+  .then(function(doc){
+    yc ="Yellow Cards: "+doc.data().yellow;
+    rc ="Red Cards: "+doc.data().red;
+    fouls = "Goals Conceded: "+doc.data().fouls;
+    off = "Offsides: "+doc.data().offsides;
+
+    array.push(yc,rc,fouls,off);
+  
+    populateList(array,"discipline");
+  });
+  
+  function populateList(array, reference){
+    for(var i = 0;i<array.length;i++){
+      var listItem = document.createElement("li");
+      var stat = document.createTextNode(array[i]);
+      listItem.appendChild(stat);
+      document.getElementById(reference).appendChild(listItem);
+    }
+    array.length = 0;
+  }
+
+  db.collection("stats").doc("notable")
+  .get()
+  .then(function(doc){
+    var array = [];
+    notableGoals = "Sergio Aguero: "+doc.data().goals;
+    notableAssists = "Kevin DeBruyne: "+doc.data().assists;
+    notablePasses = "Nicolás Otamendi: "+doc.data().passes;
+
+    array.push(notableGoals,notableAssists,notablePasses);
+
+    populateNotableStats(array);
+  })
+  
+  function populateNotableStats(array){
+    var refArray = ["notableGoals","notableAssists","notablePasses"];
+    for(var i = 0; i<array.length;i++){
+      var listItem = document.createElement("span");
+      var stat = document.createTextNode(array[i]);
+      listItem.appendChild(stat);
+      document.getElementById(refArray[i].toString()).appendChild(listItem);
     }
 
-    function initializeClock(id, endtime) {
-        var clock = document.getElementById(id);
-        var daysSpan = clock.querySelector('.days');
-        var hoursSpan = clock.querySelector('.hours');
-        var minutesSpan = clock.querySelector('.minutes');
-        var secondsSpan = clock.querySelector('.seconds');
-
-        function updateClock() {
-            var t = getTimeRemaining(endtime);
-
-            daysSpan.innerHTML = t.days;
-            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-            if (t.total <= 0) {
-                clearInterval(timeinterval);
-            }
-        }
-
-        updateClock();
-        var timeinterval = setInterval(updateClock, 1000);
-    }
-
-    var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-    initializeClock('clockdiv', deadline);
-
-
-
-    function startClock() {
-        $("#start").click(function() {
-            document.getElementById("clockform").reset();
-        })
-    }
-});
+    
+  }
