@@ -1,11 +1,12 @@
 var config = {
-    apiKey: "<API KEY>",
-    authDomain: "<AUTH DOMAIN>",
-    databaseURL: "<DATABASE URL>",
-    projectId: "<PROJECT ID>",
-    storageBucket: "<STORAGE BUCKET>",
-    messagingSenderId: "<MESSAGING SENDER ID>"
+    apiKey: "AIzaSyAbx0OXAVhGn01Tp8OGww5YSosbSLMKxmg",
+    authDomain: "manchestercity-7b95a.firebaseapp.com",
+    databaseURL: "https://manchestercity-7b95a.firebaseio.com",
+    projectId: "manchestercity-7b95a",
+    storageBucket: "manchestercity-7b95a.appspot.com",
+    messagingSenderId: "592524579818"
   };
+
  var app = firebase.initializeApp(config);
  var db = firebase.firestore(app);
  
