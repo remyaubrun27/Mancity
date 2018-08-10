@@ -20,7 +20,7 @@ header{
 	background-color: #00ccff;
 }
 section{
-	height:450px;
+	height:530px;
 	border: 5px solid black;
 }
 header h1{
@@ -133,8 +133,12 @@ nav ul li a:hover{
 table{
 	border:1px solid black;
 	margin: 0 auto;
-	margin-top:5px;
+	margin-top:20px;
 }
 td{
 	vertical-align: top;
+	padding: 0 10px 0 10px;
+}
+h1{
+	text-align: center;
 }

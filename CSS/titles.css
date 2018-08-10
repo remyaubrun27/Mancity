@@ -216,3 +216,7 @@ top: 270px;
 #extras{
 	z-index:1;
 }
+td{
+	vertical-align: top;
+
+}
